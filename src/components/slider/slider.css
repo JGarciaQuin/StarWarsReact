@@ -1,0 +1,39 @@
+.position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider {
+    background-image: url(img1.jpg);
+    background-size: cover;
+    height: 50%;
+    width: 50%;
+    border-radius: 12px;
+    animation: animate 20s infinite;
+}
+
+@keyframes animate {
+    20% {
+        background-image: url(img5.jpg);
+        background-size: cover;
+    }
+    40% {
+        background-image: url(img4.jpg);
+        background-size: cover;
+    }
+    60% {
+        background-image: url(img3.jpg);
+        background-size: cover;
+    }
+    80% {
+        background-image: url(img2.jpg);
+        background-size: cover;
+    }
+    100% {
+        background-image: url(img1.jpg);
+        background-size: cover;
+    }
+    
+}

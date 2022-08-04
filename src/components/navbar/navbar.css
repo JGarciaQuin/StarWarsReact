@@ -1,0 +1,65 @@
+:root {
+    --font: 'Monserrat', sans-serif;
+    --prime-font: 'Work Sans', sans-serif;
+    --bg: #000;
+    --main-color: #ffff40;
+    --main-font-color: #fdfbfb;
+    --sec-font-color: #fcf1f1b4;
+}
+
+.primera{
+    background: var(--bg);
+   font-family: var(--font);
+   color: var(--main-font-color);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.checkBtn {
+    display: none;
+}
+
+.nav .logo {
+    font-size: 1em;
+}
+
+.nav ol {
+    list-style: none;
+}
+
+.nav ol a {
+    text-decoration: none;
+    color: #fcf1f1b4;
+    margin: 0.3em;
+    padding: 0.5em 1.5em;
+    border-radius: 10px;
+}
+
+.nav ol a:hover {
+    font-family: var(--prime-font);
+    transition: background .8s;
+    background: var(--main-color);
+    font-weight: 700;
+    color: black;
+}
+
+.logo {
+    width: 10%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    font-weight: 2rem;
+    color: white;
+    margin: 0.3em;
+}
