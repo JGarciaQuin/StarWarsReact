@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import './planetas.css'
 import Imagenp2 from '../planetas/tato.jpg'
+import { UsePlanetas } from '../../Hooks/UsePlanet';
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 
 export const Planetas = () => {
 
-    const[planet, setPlanet] = useState([]);
+  const { getAllPlanetas, planet, setPlanet, Contador, decrementar, incrementar } =
+  UsePlanetas();
+useEffect(() => {
+  getAllPlanetas(Contador);
 
-    useEffect(() => {
-        async function fetchPlanet(){
-            const planeta = await fetch ('https://swapi.dev/api/planets/');
-            const data = await planeta.json();
-            setPlanet(data.results);
-        }
-        fetchPlanet();
-    },[]);
+  // console.log(dataPeople);
+}, [planet]);
 
   return (
     <div className='conteiner'>
@@ -41,6 +40,16 @@ export const Planetas = () => {
                 </div>
             ))
         }
+
+      <div className='ContainerPage'>
+        <button onClick={decrementar}>
+          <FaAngleLeft size={20} />Devolver
+        </button>
+        <b>{Contador}</b>
+        <button onClick={incrementar}>Siguiente
+          <FaAngleRight size={20} />
+        </button>
+      </div>
     </div>
   )
 }

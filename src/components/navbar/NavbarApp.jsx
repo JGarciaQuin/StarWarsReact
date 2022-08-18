@@ -12,8 +12,8 @@ function NavbarApp() {
                 <nav>
                     <ul>
                         <li><Link to='/'>Home</Link></li>
-                        <li><Link to='Personajes' >Personajes</Link></li>
-                        <li><Link to='Planetas' >Planetas</Link></li>
+                        <li><Link to='/Personajes' >Personajes</Link></li>
+                        <li><Link to='/Planetas' >Planetas</Link></li>
                     </ul>
                 </nav>
            </header>

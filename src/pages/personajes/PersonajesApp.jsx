@@ -1,6 +1,7 @@
 import React from 'react'
 import NavbarApp from '../../components/navbar/NavbarApp'
 import FooterApp from '../../components/footer/FooterApp'
+import { Personajes } from './Personajes'
 
 
 function PersonajesApp() {
@@ -8,7 +9,7 @@ function PersonajesApp() {
     
       <div>
         <NavbarApp></NavbarApp>
-        
+        <Personajes></Personajes>
         <FooterApp></FooterApp>
       </div>
 

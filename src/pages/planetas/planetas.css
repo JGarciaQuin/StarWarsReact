@@ -90,6 +90,32 @@ p {
     background: #27667E;
 }
 
+.ContainerPage{
+    margin-top: 600px;
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: center;
+}
+
+.ContainerPage b {
+    font-weight: 500;
+}
+
+.ContainerPage button{
+    border: 0;
+    border-radius: 12px;
+    background-color: #E30606;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 2px 3px 3px white;
+}
+
+.ContainerPage button:hover{
+    background-color: #27667E;
+    color: black;
+    font-weight: 600;
+}
+
 
 
 

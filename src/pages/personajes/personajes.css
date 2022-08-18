@@ -81,6 +81,15 @@ p {
     overflow-y: auto;
 }
 
+.ContainerPage {
+    color: white;
+
+}
+
+.ContainerPage button {
+    color: white;
+    background: #E30606;
+}
 
 @media screen and (max-width: 1280){
     .cont{
