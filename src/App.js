@@ -1,12 +1,16 @@
 import React from 'react';
-import '../src/App.css';
-import HomeApp from './components/HomeApp';
+import PersonajesApp from './pages/personajes/PersonajesApp'
+import PlanetasApp from './pages/planetas/PlanetasApp'
+import HomeApp from './pages/HomeApp';
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <HomeApp/>
-    </div>
+   <Routes>
+      <Route path='/' element={<HomeApp/ >}></Route>
+      <Route path='/Personajes' element={<PersonajesApp/ >}></Route>
+      <Route path='/Planetas' element={<PlanetasApp/ >}></Route>
+   </Routes>
   );
 }
 

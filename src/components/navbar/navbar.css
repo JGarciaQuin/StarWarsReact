@@ -7,46 +7,50 @@
     --sec-font-color: #fcf1f1b4;
 }
 
-.primera{
-    background: var(--bg);
-   font-family: var(--font);
-   color: var(--main-font-color);
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 15px 20px;
+    z-index: 10;
 }
 
-.center {
+header.abajo {
+    background: #040404;
+    padding: 10px 20px;
+}
+
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav {
-    width: 80%;
-    height: 70px;
-    margin: 0 auto;
-    justify-content: space-between;
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.checkBtn {
-    display: none;
-}
-
-.nav .logo {
-    font-size: 1em;
-}
-
-.nav ol {
+header ul li {
     list-style: none;
 }
 
-.nav ol a {
+header ul li a {
     text-decoration: none;
-    color: #fcf1f1b4;
+    color: #fff;
     margin: 0.3em;
     padding: 0.5em 1.5em;
     border-radius: 10px;
+    font-weight: 700;
 }
 
-.nav ol a:hover {
+nav ul li a:hover {
     font-family: var(--prime-font);
     transition: background .8s;
     background: var(--main-color);
@@ -62,4 +66,12 @@
     font-weight: 2rem;
     color: white;
     margin: 0.3em;
+}
+
+header.abajo a {
+    color: #fff;
+}
+
+header.abajo ul li {
+    color: #fff;
 }

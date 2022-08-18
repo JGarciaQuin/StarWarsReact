@@ -1,0 +1,60 @@
+.ContenedorPr{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #000;
+    padding: 40px;
+}
+
+.ContenedorHJ1{
+    margin: 20px;
+}
+
+.ContenedorHJ1 h1{
+    text-align: center;
+    color: #eeea18;
+    font-weight: 700;
+}
+
+.ContenedorHJ1 p{
+    text-align: left;
+    color: white;
+}
+
+.ContenedorHJ2{
+    margin: 20px;
+}
+
+.ContenedorHJ2 h1{
+    text-align: right;
+    color: white;
+    font-weight: 700;
+}
+
+.ContenedorHJ2 img{
+    float: right;
+    width: 5%;
+    margin-left: 10px;
+    justify-content: left;
+}
+
+.ContenedorHJ2 img:hover{
+    transform: translateY(10px);
+}
+
+@media (max-width: 1060px){
+    .ContenedorHJ2 img{
+        width: 10%;
+    }
+}
+
+.Copy{
+    background-color: #1D242B;
+    padding: 4px;
+    padding-top: 8px;
+}
+
+
+.Copy h4{
+    font-size: 12px;
+    color: white;
+}

@@ -5,8 +5,17 @@
     transform: translate(-50%, -50%);
 }
 
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+}
+
 .slider {
-    background-image: url(img1.jpg);
+    background-image: url(img9.jpg);
     background-size: cover;
     height: 50%;
     width: 50%;
@@ -16,7 +25,7 @@
 
 @keyframes animate {
     20% {
-        background-image: url(img5.jpg);
+        background-image: url(img7.jpg);
         background-size: cover;
     }
     40% {
@@ -32,7 +41,7 @@
         background-size: cover;
     }
     100% {
-        background-image: url(img1.jpg);
+        background-image: url(img9.jpg);
         background-size: cover;
     }
     

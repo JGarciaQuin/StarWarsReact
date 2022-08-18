@@ -5,10 +5,12 @@
 }
 
 section {
+    margin-top: 360px;
     position: relative;
     width: 100%;
     min-height: 100vh;
     padding: 100px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +44,7 @@ section {
 
 .content .textbox p {
     color: white;
+    font-weight: 600;
 }
 
 .content .textbox a {

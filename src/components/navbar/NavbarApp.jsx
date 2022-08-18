@@ -1,22 +1,22 @@
 import React from 'react'
 import '../navbar/navbar.css';
+import '../navbar/Scroll.js';
 import Logos from './logos.png'
+import { Link } from 'react-router-dom'
 
 function NavbarApp() {
   return (
         <>
-            <div className='primera'>
-    <header className='nav center'>
-        <img src={Logos} alt="Icono" className='logo' />
-        <input type="checkbox" name='' className='checkBtn' />
-        <ol className='center'>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Games</li></a>
-            <a href="#"><li>Shop</li></a>
-            <a href="#"><li>About</li></a>
-        </ol>
-    </header>
-    </div>
+           <header>
+                <img src={Logos} alt="Logos" className='logo' />
+                <nav>
+                    <ul>
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='Personajes' >Personajes</Link></li>
+                        <li><Link to='Planetas' >Planetas</Link></li>
+                    </ul>
+                </nav>
+           </header>
         </>
   );
 }
