@@ -3,6 +3,8 @@ import './personajes.css'
 import Imagenp1 from '../personajes/imgc1.jpg'
 import { UsePersonajes } from '../../Hooks/UsePerson'
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
 
 
 export const Personajes = () => {
@@ -38,7 +40,7 @@ export const Personajes = () => {
             <p><h4> <span className='negrita'>Peso en KG:</span> {people.mass}</h4></p>
             <p><h4> <span className='negrita'>Color de piel:</span> {people.skin_color}</h4></p>
           </div>
-          <center><button className='boton'>Detalles</button></center>
+          <center><button className='boton'><Link to='/detalle'>Detalles</Link></button></center>
 
         </div>
       ))
