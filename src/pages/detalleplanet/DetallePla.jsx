@@ -2,17 +2,17 @@ import React from 'react'
 import NavbarApp from '../../components/navbar/NavbarApp'
 import FooterApp from '../../components/footer/FooterApp'
 
-import  Detalle  from './Detalle'
+import  Detallepla  from './Detallepla'
 
 
 
 
-function DetalleApp() {
+function DetallePlaApp() {
   return (
     
       <>
         <NavbarApp></NavbarApp>
-        <Detalle></Detalle>
+        <Detallepla></Detallepla>
         <FooterApp></FooterApp>
         </>
       
@@ -20,4 +20,4 @@ function DetalleApp() {
   )
 }
 
-export default DetalleApp
+export default DetalleplaApp

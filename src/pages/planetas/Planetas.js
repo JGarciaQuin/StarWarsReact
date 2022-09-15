@@ -3,6 +3,7 @@ import './planetas.css'
 import Imagenp2 from '../planetas/tato.jpg'
 import { UsePlanetas } from '../../Hooks/UsePlanet';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 export const Planetas = () => {
@@ -36,7 +37,8 @@ useEffect(() => {
                     <p><h4> <span className='negrita'>Terreno:</span> {planet.terrain}</h4></p>
                     <p><h4> <span className='negrita'>Superficie del agua:</span> {planet.surface_water}</h4></p>
                   </div>
-                  <center><button className='boton'>Detalles</button></center>
+                  <center><button className='boton'><Link to={`/detalleplane/${planet.name}`}>Detalles</Link></button></center>
+
                 </div>
             ))
         }

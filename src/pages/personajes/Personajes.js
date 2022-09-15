@@ -40,7 +40,7 @@ export const Personajes = () => {
             <p><h4> <span className='negrita'>Peso en KG:</span> {people.mass}</h4></p>
             <p><h4> <span className='negrita'>Color de piel:</span> {people.skin_color}</h4></p>
           </div>
-          <center><button className='boton'><Link to='/detalle'>Detalles</Link></button></center>
+          <center><button className='boton'><Link to={`/detalle/${people.name}`}>Detalles</Link></button></center>
 
         </div>
       ))

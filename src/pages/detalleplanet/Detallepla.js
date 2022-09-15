@@ -1,12 +1,12 @@
 import React from 'react'
-import './Detalles.css'
+import './Detallespla.css'
 import cp from '../detalles/fondito.jpg'
 import person from '../detalles/person.png'
 import { useParams } from 'react-router-dom'
-import { UsePersonajes } from '../../Hooks/UsePerson'
+import { UsePlanet } from '../../Hooks/UsePlanet'
  
 
-const Detalle = ({people}) => {
+const DetallePla = ({planet}) => {
 const {name} = useParams();
 
   return (
@@ -14,7 +14,7 @@ const {name} = useParams();
     <div>
     
     <button>
-      <a href='./Personajes'>Atrás</a> 
+      <a href='./Planetas'>Atrás</a> 
       </button>
 
     <div className='detalle'>
@@ -23,7 +23,7 @@ const {name} = useParams();
         </div>
 
         <div className='text-detalle'>
-            <h1>Detalles del personaje</h1>
+            <h1>Detalles de planetas</h1>
             <h3></h3>
             
             <div className='detalle-gri'>
@@ -48,13 +48,13 @@ const {name} = useParams();
 
     <div>
         {people.filter(detallito => detallito.name===name).map((detallito,index)=>( <div key={index}>
-            <p><h4> <span className='negrita'>Género:</span> {detallito.gender}</h4></p>
-            <p><h4> <span className='negrita'>Nacimiento:</span> {detallito.birth_year}</h4></p>
-            <p><h4> <span className='negrita'>Estatura:</span> {detallito.height}</h4></p>
-            <p><h4> <span className='negrita'>Color de ojos:</span> {detallito.eye_color}</h4></p>
-            <p><h4> <span className='negrita'>Color de cabello:</span> {detallito.hair_color}</h4></p>
-            <p><h4> <span className='negrita'>Peso en KG:</span> {detallito.mass}</h4></p>
-            <p><h4> <span className='negrita'>Color de piel:</span> {detallito.skin_color}</h4></p>
+            <p><h4> <span className='negrita'>Nombre:</span> {planet.name}</h4></p>
+                    <p><h4> <span className='negrita'>Rotación:</span> {detallito.rotation_period}</h4></p>
+                    <p><h4> <span className='negrita'>Orbital:</span> {detallito.orbital_period}</h4></p>
+                    <p><h4> <span className='negrita'>Diámetro:</span> {detallito.diameter}</h4></p>
+                    <p><h4> <span className='negrita'>Gravedad:</span> {detallito.gravity}</h4></p>
+                    <p><h4> <span className='negrita'>Terreno:</span> {detallito.terrain}</h4></p>
+                    <p><h4> <span className='negrita'>Superficie del agua:</span> {detallito.surface_water}</h4></p>
         </div> ))}
     </div>
 
